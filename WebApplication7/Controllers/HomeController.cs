@@ -13,11 +13,13 @@ namespace WebApplication7.Controllers
             _logger = logger;
         }
 
+        [ResponseCache(Duration = 300, Location = ResponseCacheLocation.Any, NoStore = false)]
         public IActionResult Index()
         {
             return View();
         }
 
+        [ResponseCache(Duration = 300, Location = ResponseCacheLocation.Any, NoStore = false)]
         public IActionResult Privacy()
         {
             return View();
